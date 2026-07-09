@@ -67,9 +67,7 @@ export default function Landing() {
 
       <section className="mx-auto max-w-[1280px] px-6 py-16 md:px-10">
         <p className="text-center text-[13px] text-slate">
-          Telas 1 (Landing) e 2 (Dashboard) implementadas a partir do seu
-          design. As demais rotas (Favoritos, Sobre) podem ser plugadas do
-          mesmo jeito quando você quiser.
+          Seu site de previsão de ondas.
         </p>
       </section>
     </div>
