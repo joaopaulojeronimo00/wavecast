@@ -1,7 +1,5 @@
-// Cálculo simples de fase lunar local (sem dependência externa).
-// Baseado no ciclo sinódico médio de 29.53059 dias a partir de uma lua nova de referência.
 const SYNODIC_MONTH = 29.53058867
-const KNOWN_NEW_MOON = new Date(Date.UTC(2000, 0, 6, 18, 14)) // 2000-01-06
+const KNOWN_NEW_MOON = new Date(Date.UTC(2000, 0, 6, 18, 14))
 
 const PHASES = [
   { max: 0.033, label: 'Nova' },

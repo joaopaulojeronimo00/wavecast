@@ -1,21 +1,17 @@
 export default function LuaCard({ moon }) {
-  const label = moon?.label ?? 'Gibosa\nCrescente'
-  const illumination = moon?.illumination ?? 78
-  const daysToFull = moon?.daysToFull ?? 3
-
   return (
     <div className="rounded-3xl bg-navy-deep p-6 text-cream">
       <div className="flex items-center gap-1.5 text-[11px] font-medium uppercase tracking-wide text-accent">
         <MoonIcon /> Lua
       </div>
       <div className="mt-3 flex items-center gap-4">
-        <MoonGlyph fraction={moon?.fraction ?? 0.6} />
+        <MoonGlyph fraction={moon.fraction} />
         <div>
           <div className="whitespace-pre-line font-serif text-[22px] leading-[1.15]">
-            {label}
+            {moon.label}
           </div>
           <div className="mt-1 text-[13px] text-cream/60">
-            {illumination}% · Cheia em {daysToFull} dias
+            {moon.illumination}% · Cheia em {moon.daysToFull} dias
           </div>
         </div>
       </div>

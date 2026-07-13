@@ -8,8 +8,7 @@ export default function ComingSoon({ title = 'Em breve' }) {
       <main className="mx-auto flex max-w-[1280px] flex-col items-start px-6 py-24 md:px-10">
         <h1 className="font-serif text-[42px] text-navy-deep">{title}</h1>
         <p className="mt-3 max-w-md text-[15px] text-slate">
-          Esta tela ainda não foi implementada neste primeiro recorte — combinamos
-          começar pela Landing e pelo Dashboard de previsão.
+          Esta tela ainda não foi implementada.
         </p>
         <Link
           to="/"

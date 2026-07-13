@@ -8,10 +8,6 @@ const NAV_LINKS = [
   { label: 'Sobre', to: '/about' },
 ]
 
-/**
- * variant="dark"  -> usado sobre o hero navy (Tela 1)
- * variant="light" -> usado sobre fundo claro (Tela 2 e demais)
- */
 export default function Navbar({ variant = 'light' }) {
   const { pathname } = useLocation()
   const isDark = variant === 'dark'

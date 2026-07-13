@@ -1,5 +1,3 @@
-// Camadas de ondas decorativas do hero, reproduzindo o mockup:
-// linhas onduladas sobrepostas, sutis, atrás do conteúdo.
 export default function WaveBackdrop() {
   return (
     <svg

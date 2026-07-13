@@ -5,18 +5,18 @@ export default {
     extend: {
       colors: {
         navy: {
-          DEFAULT: '#0a2540', // primary dark background / buttons
-          deep: '#06192a',    // deepest navy — dark text on light bg, darkest cards
+          DEFAULT: '#0a2540',
+          deep: '#06192a',
           light: '#0f3155',
         },
-        cream: '#f4f7f9',      // light background / text-on-dark
+        cream: '#f4f7f9',
         accent: {
-          DEFAULT: '#7cbcd3',  // sky accent — italics, highlights
-          soft: '#b3d6e2',     // muted paragraph text on dark bg
+          DEFAULT: '#7cbcd3',
+          soft: '#b3d6e2',
         },
         slate: {
-          DEFAULT: '#5b6e80',  // secondary text on light bg
-          light: '#8095a7',    // tertiary text
+          DEFAULT: '#5b6e80',
+          light: '#8095a7',
         },
         good: {
           bg: '#ddeee2',

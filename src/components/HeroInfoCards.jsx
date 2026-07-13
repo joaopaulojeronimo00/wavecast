@@ -1,11 +1,6 @@
 import { CheckCircle2, Wind, Waves as WavesIcon, MoveUpRight, Moon, Sunrise } from 'lucide-react'
 import { formatMeters } from '../utils/format'
 
-/**
- * Cards de contexto rápido no rodapé do hero. Recebem dados reais quando
- * disponíveis (via props); caso contrário mostram os valores de exemplo
- * do mockup para nunca ficar em branco enquanto a API carrega.
- */
 export default function HeroInfoCards({ data, loading }) {
   const wave = data?.current?.waveHeight ?? 1.8
   const wind = data?.current?.windSpeed ?? 12

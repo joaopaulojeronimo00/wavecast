@@ -1,7 +1,3 @@
-/**
- * Card branco genérico usado para Vento / Maré / Temperatura / Umidade.
- * `icon` recebe um componente lucide-react já dimensionado pelo chamador.
- */
 export default function MetricCard({ icon, label, value, unit, badge, children, className = '' }) {
   return (
     <div className={`rounded-3xl bg-white p-6 shadow-card ${className}`}>

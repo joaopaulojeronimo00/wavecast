@@ -6,7 +6,6 @@ import HeroSearch from '../components/HeroSearch'
 import HeroInfoCards from '../components/HeroInfoCards'
 import { fetchForecast } from '../api/forecast'
 
-// Ponta Negra, Natal/RN — praia padrão exibida na landing.
 const DEFAULT_LOCATION = { lat: -5.879, lon: -35.156 }
 
 export default function Landing() {
@@ -20,9 +19,7 @@ export default function Landing() {
       .then((res) => {
         if (active) setData(res)
       })
-      .catch(() => {
-        // Mantém os valores de exemplo do mockup em caso de falha da API.
-      })
+      .catch(() => {})
       .finally(() => {
         if (active) setLoading(false)
       })
@@ -37,10 +34,10 @@ export default function Landing() {
         <WaveBackdrop />
         <Navbar variant="dark" />
 
-        <div className="relative z-10 mx-auto max-w-[1280px] px-6 pb-4 pt-8 md:px-10 md:pt-12">
+        <div className="relative z-20 mx-auto max-w-[1280px] px-6 pb-4 pt-8 md:px-10 md:pt-12">
           <div className="inline-flex items-center gap-2 rounded-pill border border-cream/15 bg-cream/5 px-4 py-1.5 text-[12px] text-cream/90">
             <Waves size={13} strokeWidth={2.25} />
-            v1.0 · Open-Meteo · Stormglass
+            v1.0 · Open-Meteo · tabuamare
           </div>
 
           <h1 className="mt-6 max-w-[820px] font-serif text-[46px] leading-[1.08] text-cream md:text-[64px] lg:text-[76px]">

@@ -1,9 +1,5 @@
-import { formatMeters, formatWeekday, formatDay } from '../utils/format'
+import { formatMeters, formatWeekday, formatDay, formatInt } from '../utils/format'
 
-/**
- * Se `days` (vindo da API) não estiver disponível ainda, mostra 8 dias
- * de placeholder para o layout nunca "pular" quando os dados chegarem.
- */
 export default function DateStrip({ days, activeIndex = 0, onSelect }) {
   const items = days && days.length > 0 ? days : Array.from({ length: 8 }).map((_, i) => ({
     date: null,
@@ -46,7 +42,7 @@ export default function DateStrip({ days, activeIndex = 0, onSelect }) {
               {formatMeters(item.wave)}m
             </div>
             <div className={`text-[11px] ${active ? 'text-accent-soft' : 'text-slate'}`}>
-              {Math.round(item.temp)}°
+              {formatInt(item.temp)}°
             </div>
           </button>
         )
